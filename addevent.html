@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+   <form>
+      <label>Enter Name</label>
+      <input type="text" id="txtname" onkeyup="convert_keyup();"><br><br>
+      <label>Enter Age</label>
+      <input type="text" id="txtage" onkeypress="validate_age(event);">
+      <label id="msg"></label><br><br>
+   </form>
+   <script>
+//        function convert()
+// {
+//     var x=document.getElementById("txtname").value;
+//     document.getElementById("txtname").value=x.toUpperCase();
+// }
+
+function convert_keyup()
+{
+    var x=document.getElementById("txtname").value;
+    document.getElementById("txtname").value=x.toUpperCase();
+}
+
+function validate_age(e)
+{
+    var ch=e.keyCode; //keycode property used to get code when key is pressed
+    // alert(ch);
+    if(ch>=65 && ch<=90 || ch>=97 && ch<=122)
+    {
+        alert("Enter only numbers")
+        document.getElementById("txtage").focus();
+    }
+    document.getElementById("txtage").addEventListener("focus",cleartext);
+}
+function cleartext()
+{
+    document.getElementById("txtage").value="";
+}
+   </script>
+</body>
+</html>

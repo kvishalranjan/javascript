@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dates-Method-Set in javascipt</h1>
+    <script>
+       const d=new Date();
+       var s=d.setFullYear(2017);
+       var m=d.getFullYear();
+       var b=d.getMonth();
+       var d1=d.getDate();
+    // milliseconds are caculated from jan1,1970
+       
+       document.write("<h1>Set Year value- "+m+"</h1>");
+       document.write("<h1>Month acc to set Year value- "+(b+1)+"</h1>");
+       document.write("<h1>Date acc to set Year value- "+d1+"</h1>");
+      
+       document.write("setFullYear Method-2");
+       const set_dt=new Date(2017,);
+       set_dt.setFullYear(2017,7,19);
+       m=set_dt.getFullYear();
+       b=set_dt.getMonth();
+       d1=set_dt.getDate();
+       document.write("<h1>Set Year value- " + m + "</h1>");
+       document.write("<h1>Month acc to set Year value- "+ (b+1) +"</h1>");
+       document.write("<h1>Date acc to set Year value- " + d1 + "</h1>");
+
+       const f=new Date(2016,8,15);
+       f.setMonth(4);
+       document.write("<h1>Set a new value for month- " + (f.getMonth()+1) + "</h1>");
+       f.setDate(20);
+       document.write("<h1>Set a new value for date- " + f.getDate() + "</h1>");
+       f.setHours(22); //values between 0 to 23
+       document.write("<h1>Set a new value for HOURS- " + f.getHours() + "</h1>");
+       f.setMinutes(20);  //values between 0 to 59
+       document.write("<h1>Set a new value for minutes- " + f.getMinutes() + "</h1>");
+       f.setSeconds(20);  //values between 0 to 59
+       document.write("<h1>Set a new value for date- " + f.getSeconds() + "</h1>");
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String methods in javascipt</h1>
+    <script>
+        document.write("<h1>String as object</h1>"+"<br>")
+       var str=new String("ABC DEF");
+       document.write(str);
+       document.write("<h1>String passed as values to variables</h1>"+"<br>");
+       var str1="ABC DEF";
+       document.write(str1);
+
+       var s="The quick brown fox";   //will count space also a a character
+       document.write("<h1>String Methods</h1>");
+        document.write("<h2>String-"+s+"</h2>");
+       document.write("<h1>Length of string-"+s.length+"</h1><br>");
+       var x=s.replace("brown","black")
+       document.write("<h1>Replace a word of string-"+x+"</h1><br>");
+       x=s.substring(4,18); //4 is the starting and 18 is the end, prints all characters between 4 and 18 not including 18th character
+       document.write("<h1>Substring of string-"+x+"</h1>");
+       x1=s.substr(4,18); //4 is the starting and 18 is the end, prints all characters between 4 and 18 including 18th character
+       document.write("<h1>Substr of string-"+x1+"</h1>");
+       var s1="jump over the lazy dog";
+       document.write("<h1>Concatenate two strings-"+s.concat(s1)+"</h1>");
+       document.write("<h1>Concatenate two strings-"+s.concat(s)+"</h1>");
+       document.write("<h1>Convert to uppercase-"+s1.toUpperCase()+"</h1>");
+       document.write("<h1>Convert to lowercase-"+s1.toLowerCase()+"</h1>");
+
+        var b="          space is included before and after          "
+        document.write("<h1>String-"+b+"</h1>");
+        document.write("<h1>Removes all whitespace from string-"+b.trim()+"</h1>");
+        document.write("<h1>Finding first occurence of o letter-"+s1.indexOf('o')+"</h1>");
+        document.write("<h1>Finding last occurence of e letter-"+s1.lastIndexOf('e')+"</h1>");
+        
+       var h="Mr. Prime Minister had a meeting with Mr. President";
+       document.write("<h1>Finding first occurence of Mr. word-"+h.indexOf('Mr.')+"</h1>");
+       document.write("<h1>Finding last occurence of Mr. word-"+h.lastIndexOf('Mr.')+"</h1>");
+        
+       document.write("<h1>Searching for word meeting, location if word is found-"+h.search('meeting')+"</h1>");
+       document.write("<h1>Searching for word great, no location if word is not found-"+h.search('great')+"</h1>");
+       
+
+
+    </script>
+</body>
+</html>

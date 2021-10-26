@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dtes in javascipt</h1>
+    <script>
+        var dt=new Date();
+        document.write(dt);
+        var dt1=new Date(2021,8,24);
+         // javascript accepts month between 0 to 11(as it works in array form)
+        document.write("<br>"+dt1);
+        document.write("<br><h1>Date formats</h1>");
+        document.write("<br><h2>Short Date formats 09/24/202 </h2>-");
+        var sd=new Date("09/24/2021");
+        document.write("<br>"+sd);
+        document.write("<br><h2>Long Date formats09/24/2021 </h2>");
+        var sd=new Date("Oct 01 2021");
+        document.write("<br>"+sd);
+        document.write("<br><h2>Short Date formats with time 09/24/2021</h2>");
+        var sdt=new Date("2021-09-24T03:00:00+05:30");
+        document.write("<br>"+sdt);
+
+        document.write("<br><h2>Short Date formats with time and time zone 09/24/2021</h2>");
+        var sdt1=new Date("2021-09-24T12:00:00Z");
+        document.write("<br>"+sdt1);
+       
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter first number</label>
+        <input type="text" id="num1" value="39"><br><br>
+        <label>Enter second number</label>
+        <input type="text" id="num2" value="20"><br><br>
+        <script>
+            var n1=parseInt(document.getElementById("num1").value);
+            var n2=parseInt(document.getElementById("num2").value);
+            document.write("Bitwise And - & "+"<br> ");
+            document.write(n1 + "&" + n2 + "=" +(n1 & n2));
+
+            document.write("<br>"+"Bitwise OR - | "+"<br> ");
+            document.write(n1 + "|" + n2 + "=" +(n1 | n2));
+
+            document.write("<br>"+"Bitwise XOR - ^ "+"<br> ");
+            document.write(n1 + "^" + n2 + "=" +(n1 ^ n2));
+
+            document.write("<br>"+"Bitwise NOT - ~ "+"<br> ");
+            document.write(~n1);
+
+            document.write("<br>"+"Left Shift operator - << "+"<br> ");
+            document.write(n1<<2);
+
+            document.write("<br>"+"Right Shift operator - >> "+"<br> ");
+            document.write(n2>>2);
+            
+        </script>
+    </form>
+</body>
+</html>

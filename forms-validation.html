@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset and legend Examples</title>
+    <script src="form-validation.js"></script>
+</head>
+<body>
+   <form onsubmit="return validate();">
+    
+        <!-- Personal Details fieldset starts here -->
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+                <label for="fname">First Name </label>
+                <input type="text" id="fname"  placeholder="First Name">
+                <br><br>
+                <label for="lname">Last Name </label>
+                <input type="text" id="lname"  placeholder="Last Name">
+                <br><br>
+                <label for="gender">Gender :</label>&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+                <br><br>
+                <label for="dob">Date of Birth</label>&nbsp;&nbsp;&nbsp;
+                <select id="ddl_date">
+                    <script>
+                        ddl_date.innerHTML="<option>"+"Date"+"</option>";
+                        var selectAge = document.getElementById("ddl_date");
+                        var content;
+                        for (var i=1;i<=31; i++)
+                        {
+                            content+="<option>" + i+ "</option>";
+                        }
+                        ddl_date.innerHTML+=contents;
+                    </script>
+                   
+                </select>&nbsp;&nbsp;&nbsp;
+                <select id="ddl_month">
+                  <option selected>Month</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+    </select>&nbsp;&nbsp;&nbsp;
+    <select id="ddl_year">
+        <script>
+            ddl_year.innerHTML="<option>"+"Year"+"</option>";
+            var d=new Date();
+            var selectYear = document.getElementById("ddl_year");
+            var y;
+            for (var i=1950;i<=d.getFullYear(); i++)
+            {
+                y+="<option>" + i+ "</option>";
+            }
+            ddl_year.innerHTML += y;
+        </script>
+    </select><br><br>
+
+    <label for="hobbies">Hobbies</label>&nbsp;&nbsp;&nbsp;
+    <input type="checkbox" name="hobbies" value="read">Reading&nbsp;&nbsp;&nbsp;
+    <input type="checkbox" name="hobbies" value="music">Music&nbsp;&nbsp;&nbsp;
+    <input type="checkbox" name="hobbies" value="coins">Coins Collections&nbsp;&nbsp;&nbsp;
+    <br><br><br>
+    <label for="addr">Address</label>
+    <textarea id="addr" rows="4" cols="20" placeholder="Enter your address"></textarea>
+</fieldset>               <!-- Personal Details fieldset ends here -->
+    
+    <br><br>
+            <!-- Educational Qualification fieldset starts here -->
+    <fieldset>
+        <legend><b>Educational Qualification</b></legend>
+            <label for="clas10">Highschool percentage</label>
+            <input type="text" id="class10" ><br><br>          
+              <label for="year10">Passing year</label>    
+             <input type="text" id="year10" ><br>
+    </fieldset>               <!-- Educational Qualification fieldset ends here -->  
+
+    <br><br>
+    <input type="submit" value="SUBMIT">
+    </form>
+
+</body>
+</html>

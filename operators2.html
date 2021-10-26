@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter first number</label>
+        <input type="text" id="num1" value="9"><br><br>
+        <label>Enter second number</label>
+        <input type="text" id="num2" value="20"><br><br>
+        <script>
+            var n1=parseInt(document.getElementById("num1").value);
+            var n2=parseInt(document.getElementById("num2").value);
+            document.write("Logical operator && ");
+            if(n1>0 && n1<10)
+            document.write(n1+"is greater than zero but less than 10"+"<br><br>");
+
+            document.write("Logical operator  OR || ");
+            if(n2>0 || n2<10)
+            document.write(n2+" is greater than zero or it is greater than 10"+"<br><br>");
+
+            document.write("Logical operator Not!");
+            document.write(!(n1));
+
+            document.write("<br><br>"+"Ternary/Conditional operator");
+            // (condition)?expression 1:expression 2
+            var c=(n1%2==0)?"even":"odd";
+            // if condition is true expression evaluates
+            // if condition is false expression2 evaluates
+            document.write(c);
+        </script>
+    </form>
+</body>
+</html>

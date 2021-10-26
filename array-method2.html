@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays in javascript</h1>
+    <p id="result">Array elements</p>
+    <script>
+        const num=[2,5,7,3,8,10,12,15,17];
+        document.write("<h1>Array elements</h1>"+"<br>");
+        document.write(num);
+       // concat() merging two arrays
+       const words=["two","five","seven","three","eight","nine","one","four"];
+       document.write("<h1>words Array elements</h1>"+"<br>");
+        document.write(words);
+        document.write("<h1> concat words Array with num</h1>"+"<br>");
+        document.write("<h1>words Array will start after num array ends</h1>");
+        const array2=num.concat(words);
+        document.write(array2);
+        // slice()-it removes a part of array,
+        document.write("<h1> slice()- to remove some array elements</h1>");
+        document.write("<h1>first three array elements are removed from words array</h1>");
+        document.write(words.slice(3));
+        document.write("<h1>slice(2,5)-will show only elements between 2nd and 5th and 5th element will also be included</h1>");
+        document.write(words.slice(2,5));
+        document.write("<h1>sort()- it will sort the elements</h1>");
+        document.write(words.sort());
+        document.write("<h1>sort()- it will not sort numerically</h1>");
+        document.write(num.sort());
+
+        document.write("<h1>sort()- it will sort numerically</h1>");
+        num_sort();
+        function num_sort()
+        {
+            num1=num.sort(function(a,b)
+            {
+                return a-b;
+            }
+            );
+            document.write(num1);
+        }
+        // reversing array
+
+        document.write("<h1>reverse() will reverse the array</h1>");
+        const name=["abc","mno","def","ghi","aan"];
+        document.write(name.reverse());
+    </script>
+
+</body>
+</html>

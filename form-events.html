@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script_onchange.js"></script>
+</head>
+<body>
+   <h1 id="text_color">Click on any option to change text colour</h1>
+   <form>
+       <input type="radio" name="color" value="red" onchange="radio_change(this); color_red();">Red&nbsp;&nbsp;
+       <input type="radio" name="color" value="green" onchange="radio_change(this); color_green();">Green&nbsp;&nbsp;
+       <input type="radio" name="color" value="blue" onchange="radio_change(this); color_blue();">Blue&nbsp;&nbsp;
+       <input type="radio" name="color" value="purple" onchange="radio_change(this); color_purple();">Purple&nbsp;&nbsp;
+   </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays in javascript</h1>
+    <script>
+        const name=["charu","Abhinav","Divya","Raj"]; //array declaration&initalization
+
+        //creating instance of array object with new keyword as stu
+        //Array as instance
+        const stu=new Array("charu","Abhinav","Divya","Raj");
+
+        document.write("Length of array name="+name.length+"<br>");
+        document.write("Length of array stu="+stu.length);
+
+        //printing array elements
+        document.write("<br><br><b>"+"Printing array values using for loop"+"</b><br>");
+        for(var i=0;i<name.length;i++)
+        {
+document.write("Name"+(i+1)+":"+name[i]+"<br>")
+        }
+
+        //printing array elements usinf for-in
+        document.write("<br><br><b>"+"Printing array values using for-in loop"+"</b><br>");
+        for (let n in name)
+        {
+            document.write("Name"+": "+name[n]+"<br>");
+        }
+    </script>
+</body>
+</html>

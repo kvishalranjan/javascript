@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter your Name</label>
+        <input type="text" id="name"><br><br>
+
+        <input type="button" value="click" onclick="show();">
+        <p id="good" style="color: blue;"></p>
+    </form>
+
+    <script>
+        function show()
+        {
+            var a=document.getElementById("name").value;
+            document.getElementById("good").innerHTML="<h1>"+a+"</h1>";
+        }
+    </script>
+</body>
+</html>
